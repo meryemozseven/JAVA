@@ -19,8 +19,8 @@ public class MathSinifi {
 
         random() : Rastgele sayı üretmek için kullanılır. 0 ile 1 arasında double değer üretir.
          */
-        int onaKadarRastgeleSayi = int(Math.random()*11); //
-        int ikiyeKadarRastgeleSayi = int(Math.random()*2+1); //
+        int onaKadarRastgeleSayi = (int)(Math.random()*11);
+        int ikiyeKadarRastgeleSayi = (int)(Math.random()*2+1);
 
         //üretilecek sayıda 0 olmasın diyorsan Math.random *(üst_sinir+1)
         //üretilecek sayıda 0 olsun diyorsan (Math.random *üst_sinir)+1
