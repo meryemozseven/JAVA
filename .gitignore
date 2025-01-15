@@ -26,5 +26,9 @@ bin/
 .vscode/
 
 ### Mac OS ###
+<<<<<<< HEAD
 .DS_Store
 #/src/Kontrol_yapisi/
+=======
+.DS_Store
+>>>>>>> 36202f0ad1c9bb892a92038cd69a73cd30384d4c

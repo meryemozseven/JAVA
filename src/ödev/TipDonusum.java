@@ -6,7 +6,6 @@ public class TipDonusum {
 
         String stringDegiskeni = "150";
         int integerDeger =  Integer.parseInt(stringDegiskeni);
-        int integerDeger2 =  Integer.valueOf(stringDegiskeni);//dönen değer bir Integer nesnesidir
 
         stringDegiskeni = String.valueOf(integerDeger);
         System.out.println("String Değişkeninin Son Değeri:" + stringDegiskeni);
@@ -34,8 +33,7 @@ public class TipDonusum {
 
         int number1 =1;
         int number2 =2;
-        double average = (number1+number2)/2;
-        System.out.println("1. değer:" + average);
+        System.out.println("1. değer:");
         double average2 = (number1+number2)/2.0;
         System.out.println("2. değer:" + average2);
 
