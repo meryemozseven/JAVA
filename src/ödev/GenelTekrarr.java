@@ -12,36 +12,26 @@ public class GenelTekrarr {
 
 
          */
-        Scanner input = new Scanner(System.in);
+        Scanner tara = new Scanner(System.in);
 
-        System.out.println("Sıcak Soğuk Oyununa Hoş Geldiniz!!Lütfen bir sayı girin.");
+        int uretilenSayi = (int) (Math.random() * 101);//0 ile 100 arası sayı üretilir 100 dahil.
+        int tahmin = -1 ;
+        int tahminEtmeSayisi = 0;
 
-        int tahminEdilenSayi = input.nextInt();
-        int randomSayi = (int)(Math.random() * 101);
+        while (tahmin != uretilenSayi){
 
-        while (randomSayi != tahminEdilenSayi) {
+            System.out.println("Tahmininizi giriniz :");
+            tahmin = tara.nextInt();
+            tahminEtmeSayisi++;
 
-            int tekrar = 0;
-            if (randomSayi > tahminEdilenSayi) {
-                System.out.println(randomSayi + "sayıyı artırın");
-                tahminEdilenSayi = input.nextInt();
-                tekrar ++;
-            }else if (randomSayi < tahminEdilenSayi) {
-                System.out.println(randomSayi + "sayıyı azaltın");
-                tahminEdilenSayi = input.nextInt();
-                tekrar ++;
-            } else if (randomSayi == tahminEdilenSayi) {
-                break;
-
+            if(tahmin == uretilenSayi){
+                System.out.println("Tebrikler ! "+tahminEtmeSayisi + " seferde sayıyı buldunuz");
+            }else if(tahmin > uretilenSayi){
+                System.out.println("Tahmin ettiğiniz sayı yüksek, DÜŞÜRÜN");
+            }else{
+                System.out.println("Tahmin ettiğiniz sayı çok düşük, YÜKSELTİN");
             }
-
-
-
         }
-        System.out.println(randomSayi + "bulundu,sonlanıyor");
-
-
-
 
 
 
