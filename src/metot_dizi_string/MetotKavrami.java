@@ -13,7 +13,7 @@ public class MetotKavrami {
         int donenDeger = sayilarinFarki(5, 1);
         System.out.println("Sayılarımızın Farki:" + donenDeger);
         //parametre almayan ve geriye değer döndüren
-        int rastgeleDeger = Math.random();
+        double rastgeleDeger = Math.random();
         System.out.println("Ratgele Değer" + rastgeleDeger );
 
 
