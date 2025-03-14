@@ -14,7 +14,7 @@ public class IkiBoyutluDiziler {
         int[][] sayilar2={{1,2,3},{4,5,6},{7,8,9}};;
         for(int satir=0;satir<sayilar.length;satir++){
             //sayilar[satir] belirli bir satırdaki elemanları temsil eden bir dizi
-            //olduğundan saayilar[satir].length o saırdaki sütun sayısını verir
+            //olduğundan sayilar[satir].length o saırdaki sütun sayısını verir
             for(int sutun=0;sutun<sayilar[satir].length;sutun++){
                 System.out.println(satir + ". satır " + sutun+ ". sutundaki değer " + sayilar[satir][sutun]);
             }
@@ -25,18 +25,25 @@ public class IkiBoyutluDiziler {
 
         int [][]borclar ={ {0,100,200} , {350,0,250} , {150,500,0} };
         String[]kisiler ={"Emre","Hasan","Ali"} ;
-        for(int a=0 ; a<borclar.length ; a++ ){
-            for(int sutun2 = 0; sutun2<borclar[a].length ; sutun2++){
-                if(a=!sutun2){
-                    System.out.println(kisiler[a] + ". satır " + sutun2+ ". sutundaki değer " + borclar[a][sutun2]);
+        for (int a =0;a<borclar.length;a++){
+            for(int sutun2=0;sutun2<borclar[a].length;sutun2++){
+
+                    if(a != sutun2) {
+                        int alacak = borclar[a][sutun2]-borclar[sutun2][a];
+                        if(alacak<0){
+                            System.out.println(kisiler[a] + "'nın " +kisiler[sutun2] + "'den alacağı " +(-alacak) );
+
+
+                    }
 
                 }
-
             }
+
+        }
         }
 
 
 
 
+
     }
-}
