@@ -24,8 +24,11 @@ public class metotlaraDiziGöndermekVeAlmak {
         }
     }
 
+
     private static void diziDegerleriniBirArttir(int[] sayilar) {
-        sayilar[0]++;
+        for (int i = 0; i < sayilar.length; i++) {
+            sayilar[i]++;  // Her elemanı 1 artır
+        }
     }
 
     private static void degeriBirArtir(int i) {

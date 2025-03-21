@@ -35,4 +35,16 @@ public class DizilerinKopyalanmasi {
         return newDizi;
 
     }
+    /*
+    public static void tersCevir(int[] dizi) {
+    int left = 0, right = dizi.length - 1;
+    while (left < right) {
+        int temp = dizi[left];
+        dizi[left] = dizi[right];
+        dizi[right] = temp;
+        left++;
+        right--;
+    }
+}
+Bu yöntem ek dizi kullanmadan, diziyi yerinde (in-place) ters çevirir. */
 }

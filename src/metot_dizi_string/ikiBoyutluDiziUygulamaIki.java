@@ -71,7 +71,7 @@ public class ikiBoyutluDiziUygulamaIki {
                         break;
                     }
                 }
-                if (!found) System.out.println("Bu ID’ye ait üye yok.");
+                if (!found) System.out.println("Bu ID’ye aiit üye yok.");
 
                 scanner.close();
             }

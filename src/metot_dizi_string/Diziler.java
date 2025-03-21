@@ -15,7 +15,7 @@ public class Diziler {
             System.out.println(sayilar[index]);
 
         }
-       // ÇÖZÜM İKİ
+       // ÇÖZÜM İKİi
             String[]aylar = {"ocak","şubat","mart"};
             Scanner input = new Scanner(System.in);
         System.out.println("bir ay değerini rakamla yazmalısın");

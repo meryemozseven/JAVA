@@ -6,7 +6,7 @@ public class ArraysSinifiKullanimi {
     public static void main(String[] args) {
         int[] sayilar = {8,9,77,41,22};
         int[] sayilar2 = {8,9,77,41,22};
-        System.out.println("Sıralama öncesi dizi");
+        System.out.println("SıralamaA öncesi dizi");
         diziYazdir(sayilar);
         Arrays.sort(sayilar);
         Arrays.sort(sayilar,2,5);

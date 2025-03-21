@@ -3,7 +3,7 @@ package metot_dizi_string;
 public class IkiBoyutluDiziUygulama {
     public static void main(String[] args) {
         int [][] notDizisi= { {85,90,78,88}, {76,85,80,82} ,{90,92,88,95} ,{65,70,75,80}, {88,86,91,89}};
-        String[]ogrenciler={"Ahmet","Elif","Ece","Kaan","Hande"};
+        String[]ogrenciler={"Ahmet","Elif","Ece","Kaan","Handde"};
         for (int satir = 0; satir<notDizisi.length;satir++){
             int toplam = 0;
 

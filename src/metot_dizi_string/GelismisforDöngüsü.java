@@ -1,5 +1,7 @@
 package metot_dizi_string;
-
+/*  For-each, dizinin orijinal elemanlarını değiştiremez, ama okuyarak başka bir değişkende işlem yapabilir.
+❌ For-each ile dizinin içeriğini güncellemek mümkün değil.
+📌 Eğer elemanları değiştirmek istiyorsan, klasik for döngüsü kullan! */
 public class GelismisforDöngüsü {
     public static void main(String[] args) {
         int[] sayilar = {5, 10, 4, 3};  // Dizi tanımı düzeltildi.

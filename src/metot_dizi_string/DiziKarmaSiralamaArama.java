@@ -8,7 +8,7 @@ public class DiziKarmaSiralamaArama {
         System.out.println("Dizinin karılmış hali");
         diziYazdir(sayilar);*/
         selectionSort(sayilar);
-        System.out.println("selection sort sonrası dizi");
+        System.out.println("selecCtion sort sonrası dizi");
         diziYazdir(sayilar);
        int sonuc =  binarySearch(sayilar,77);
         System.out.println(sonuc);

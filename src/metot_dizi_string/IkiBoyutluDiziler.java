@@ -13,7 +13,7 @@ public class IkiBoyutluDiziler {
 //3*3 lük matris
         int[][] sayilar2={{1,2,3},{4,5,6},{7,8,9}};;
         for(int satir=0;satir<sayilar.length;satir++){
-            //sayilar[satir] belirli bir satırdaki elemanları temsil eden bir dizi
+            //sayilar[satirr] belirli bir satırdaki elemanları temsil eden bir dizi
             //olduğundan sayilar[satir].length o saırdaki sütun sayısını verir
             for(int sutun=0;sutun<sayilar[satir].length;sutun++){
                 System.out.println(satir + ". satır " + sutun+ ". sutundaki değer " + sayilar[satir][sutun]);
