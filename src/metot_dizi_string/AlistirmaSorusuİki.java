@@ -7,40 +7,31 @@ public class AlistirmaSorusuİki {
         * toplamını yazdıran programı yazınız.Ayrıca bu matriste yer alan en küçük ve
         *  en büyük sayıyı da mesaj olarak gösterin.*/
         int matris[][] = new int[3][2];
+        int enKucukSayi = 900; int enBuyukSayi =0;
         //Random sayı atadım
         for (int satir=0;satir<matris.length;satir++){
 
             for (int sutun = 0;sutun<matris[satir].length;sutun ++){
-                matris[satir][sutun] = (int) (Math.random() * 100);
+                int rastgeleSayi= (int) (Math.random() * 100);
+                matris[satir][sutun] =rastgeleSayi;
+                System.out.println(satir + "satirfaki" + sutun + " . sutunun elemanı" + matris[satir][sutun]);
+                if(enKucukSayi>rastgeleSayi){
+                    enKucukSayi =  rastgeleSayi;
+                }
+                if(enBuyukSayi < rastgeleSayi){
+                    enBuyukSayi = rastgeleSayi;
+                }
             }
 
         }
+
+        System.out.println("Bu matristeki en küçük sayı" + enKucukSayi + "Bu matristeki en büyük sayi" + enBuyukSayi);
         //////////////////////////////
-        //DİZİYİ GÖSTERDİM
-        for (int satir=0;satir<matris.length;satir++){
 
-            for (int sutun = 0;sutun<matris[satir].length;sutun ++){
-                System.out.print(matris[satir][sutun] + " ");
-            }
-            System.out.println();
 
-        }
 
         //max değer
-                int maxDeger = matris[0][0];
-                for (int i=0;i<matris.length;i++){
 
-                    for (int j = 0;j<matris[i].length;j ++){
-                       if(matris[i][j]>maxDeger){
-                           int geciciDegisken = matris[i][j];
-                           maxDeger = geciciDegisken;
-                       }else {
-                           System.out.println(maxDeger);
-                       }
-                    }
-
-                }
-                System.out.println("Dizinin en büyük değeri" + maxDeger);
 
 
 
